@@ -1,0 +1,229 @@
+/*基本樣式*/
+
+
+/* 顏色 */
+
+
+/* 通用樣式 */
+.container {
+    max-width: 1296px;
+    margin: 0 auto;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+@media screen and (max-width:1100px){
+    .container{
+        width: 100%;    
+        padding-left: 12px;
+        padding-right:12px ;  
+    }
+
+}
+
+
+.nav{
+    align-items: center;
+}
+.nav-l{
+    margin-right: auto;
+}
+.nav-r{
+    padding-right: 12px;
+}
+
+@media screen and (max-width:576px){
+    .dn{
+        display: none;
+    }
+
+}
+
+.n3{
+    color: var(--neutral-300);
+}
+.n6{
+    color: var(--neutral-600);
+}
+.p4{
+    color: var(--primary-400);
+}
+
+.side-l{
+    width: 196px;
+}
+
+
+@media screen and (max-width:1296px){
+    .side-l{
+        display: none;
+    }
+
+}
+
+.side-r{
+    flex:1;
+    flex-wrap: wrap;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -12px;
+    margin-right: -12px;
+}
+.col-4{
+    width: 33.3333%;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+
+.col-4 img{
+    width: 100%;
+    height: auto;
+}
+.page  {
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media screen and (max-width:1296px){
+    .col-4{
+        width: 50%;
+        padding-left: 12px;
+        padding-right: 12px;
+    
+
+    }
+
+
+}
+@media screen and (max-width:576px){
+    .col-4{
+        width: 100%;
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+}
+
+
+
+.page a{
+    font-family:"Noto Sans TC", "sans-serif";
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.05rem;
+    color: var(--neutral-900);
+    padding: 8px 15px;
+}
+
+.page a:hover{
+    background-color: var(--primary-300);
+}
+.mga{
+    margin: 0 auto;
+}
+.member{
+    background-color:var(--primary-200) ;
+}
+
+.member button{
+    background-color: black;
+    color: white;
+    margin:  24px;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 12px 24px;
+    border-radius: 4px;
+}
+
+@media screen and (max-width:576px){
+    .mga{
+        flex-direction: column;
+        align-items: center;  
+        margin: 0 auto;
+    }
+    .member button{
+        margin-top: 8px;
+    }
+
+
+}
+
+
+.count{
+    margin-top:33.5px ;
+    margin-bottom: 33.5px;
+    
+}
+
+@media screen and (max-width:576px){
+    .count{
+        font-size: 20px;
+        line-height: 1.2;
+        font-weight: 700;
+        
+    }
+
+
+}
+
+
+.footer{
+    max-width: 1296px;
+    margin: 64px auto;
+    
+}
+.footer-t{
+    border-bottom: 1px solid var(--neutral-300);
+}
+
+.footer-t-r{
+    color: var(--neutral-900);
+}
+
+.footer-b p{
+    color: var(--neutral-600);
+}
+.footer-b{
+    justify-content: center;
+}
+.copyright{
+    text-align: center;
+    line-height: 1.5;
+}
+
+.product-card{
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    cursor: pointer; 
+}
+
+.product-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+@media screen and (max-width: 576px) {
+    .footer {
+        padding-left:12px;  /* 讓內容離開螢幕邊緣 */
+        padding-right: 12px;
+        box-sizing: border-box;
+    }
+    .footer-t {
+        flex-direction: column;    /* 主區塊垂直排列 */
+        align-items: flex-start;       
+        text-align: left;
+        
+    }
+
+    .footer-t-r {
+        flex-direction: column;    /* 讓連結垂直排列 */
+        justify-content: center;
+        padding-left: 12px;
+        gap: 16px; /* 控制上下間距 */
+    }
+}
