@@ -134,10 +134,17 @@
 .shoescolor-color{
     max-width: 64px;
     text-align: center;
+    cursor: pointer;    
 }
 .shoescolor-color img{
     width: 100%;
     height: auto;
+}
+.shoescolor-color:hover{
+    border: 1px solid rgb(65, 71, 165);
+    
+    cursor: pointer;
+
 }
 
 .size-card{
@@ -169,6 +176,7 @@
     width: 49%;
     padding: 12px ;
     background-color: white;
+    cursor: pointer;
 }
 
 .material{
@@ -261,6 +269,7 @@
     font-weight: 500;
     padding: 12px 24px;
     border-radius: 4px;
+    cursor: pointer;
 }
 @media screen and (max-width:576px){
     .mga{
