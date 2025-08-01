@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./reset.css">
-    <link rel="stylesheet" href="./common.css">
-    <link rel="stylesheet" href="./product.css">
+    <link rel="stylesheet" href="./CSS/reset.css">
+    <link rel="stylesheet" href="./CSS/common.css">
+    <link rel="stylesheet" href="./CSS/product.css">
 
 </head>
 <body>
@@ -14,12 +14,17 @@
         <div class="nav d-flex justify-content-sb pb-16 pt-16 ">
             <div class="nav-l d-flex justify-content-sb">
                 <a href="#">
-                    <img src="./image/logo.svg" alt="URBNSTEP" class="mr-48">
+                    <h1>
+                        <img src="./image/logo.svg" alt="URBNSTEP" class="mr-48">
+                    </h1>
                 </a>
 
-                <div class="nav-l-r d-flex pt-12">
-                    <a href="./index.html" class="mr-40 n9 dn">商品列表</a>
-                    <a href="./brandstory.html" class="n9 dn">品牌故事</a>
+                <div class="nav-l pt-12">
+                    <ul class=" d-flex">
+                        <li><a href="./index.html" class="mr-40 n9 dn">商品列表</a></li>
+                        <li><a href="./brandstory.html" class="n9 dn">品牌故事</a></li>
+                    </ul>
+                    
                 </div>
             </div>
             <div class="nav-r pt-12">
@@ -32,50 +37,50 @@
             
         </div>
         <div class="content d-flex mb-24">
-            <div class="side-r mr-24">
-                <div class="row">
-                    <div class="col-6">
-                        <div class="card">
+            <div class="col-7 mr-24 col-md-7">
+                <div class="row card">
+                    
+                        <div class="col-6">
                             <img src="./image/image.png" alt="Platform 404">
                         </div>
-                        <div class="card dn">
+                        <div class="col-6 dn">
                             <img src="./image/image-1.png" alt="Platform 404">
                         </div>
-                        <div class="card dn">
+                        <div class="col-6 dn">
                             <img src="./image/image-2.png" alt="Platform 404">
                         </div>
-                        <div class="card dn">
+                        <div class="col-6 dn">
                             <img src="./image/image-3.png" alt="Platform 404">
                         </div>
-                        <div class="card dn">
+                        <div class="col-6 dn">
                             <img src="./image/image-4.png" alt="Platform 404">
                         </div>
-                        <div class="card dn">
+                        <div class="col-6 dn">
                             <img src="./image/image-5.png" alt="Platform 404">
                         </div>
-                        <div class="card dn">
+                        <div class="col-6 dn">
                             <img src="./image/image-6.png" alt="Platform 404">
                         </div>
-                        <div class="card dn">
+                        <div class="col-6 dn">
                             <img src="./image/image-7.png" alt="Platform 404">
                         </div>
-                    </div>
+                    
 
 
                 </div>
 
 
             </div>
-            <div class="side-l">
+            <div class="col-5  col-lg-5 col-sm-5">
                 <div class="list mb-12">
-                    <ul class="d-flex">
+                    <ul class="d-flex flex-wrap">
                         <li><a href="#" class="mr-12 n6">首頁</a></li>
-                        <span class="mr-12 n3">/</span>
-                        <li><a href="#" class="mr-12 n6">女鞋</a></li>
-                        <span class="mr-12 n3">/</span>
-                        <li><a href="#" class="mr-12 n6">滑板鞋</a></li>
-                        <span class="mr-12 n3">/</span>
-                        <li><a href="#" class="mr-12 ">Platform 404</a></li>
+
+                        <li><a href="#" class="mr-12 n6 before-slash">女鞋</a></li>
+
+                        <li><a href="#" class="mr-12 n6 before-slash">滑板鞋</a></li>
+
+                        <li><a href="#" class="mr-12  before-slash">Platform 404</a></li>
                     </ul>
 
                 </div>
@@ -102,7 +107,7 @@
                 </div>
 
                 <p class="mb-8">尺寸</p>
-                <div class="size d-flex fww mb-8">
+                <div class="size d-flex flex-wrap mb-8">
                     
                     <div class="size-card md mr-8 mb-8 ">35(22.5cm)</div>
 
@@ -152,31 +157,36 @@
                 </div>
                 <div class="material ">
                     <p class="md pt-12">商品材質</p>
-                    <p class="n6 mb-12">
-                    鞋面：合成皮革（Synthetic Leather）
-                    內裡：透氣網布材質，提升舒適與排汗性
-                    鞋底：EVA 輕量發泡橡膠，具備良好緩震與止滑效果
-                    鞋帶：聚酯纖維，耐拉扯不易鬆脫
-                    </p>
+                    <ul class="n6 mb-12">
+                        <li>鞋面：合成皮革（Synthetic Leather）</li>
+                        <li>內裡：透氣網布材質，提升舒適與排汗性</li>
+                        <li>鞋底：EVA 輕量發泡橡膠，具備良好緩震與止滑效果</li>
+                        <li>鞋帶：聚酯纖維，耐拉扯不易鬆脫</li>
+                    
+                    </ul>
 
                 </div>
                 <div class="material ">
                     <p class="md pt-12">購買須知</p>
-                    <p class="n6 mb-12">
-                    商品顏色因螢幕顯示可能略有差異，請以實品為準。
-                    建議首次穿著前試穿確認尺寸，避免影響退換貨權益。
-                    本商品為限量發售，庫存有限，如需更換尺寸請儘早聯繫客服協助處理。
-                    </p>
+                    <ul class="n6 mb-12">
+                    <li>商品顏色因螢幕顯示可能略有差異，請以實品為準。</li>
+                    <li>建議首次穿著前試穿確認尺寸，避免影響退換貨權益。</li>
+                    <li>本商品為限量發售，庫存有限，如需更換尺寸請儘早聯繫客服協助處理。</li>
+                        
+                    </ul>
 
                 </div>
 
                 <div class="material ">
                     <p class="md pt-12">保養方式</p>
-                    <p class="n6 mb-12">
-                    建議以乾布或微濕軟布擦拭表面汙漬，避免機洗或長時間浸水。
-                    收納時請放置於乾燥通風處，避免日曬及高溫導致變形或龜裂。
-                    若需深層清潔，建議使用中性清潔劑並搭配柔刷輕刷，勿使用漂白水或強酸強鹼清潔劑。
-                    </p>
+                    <ul class="n6 mb-12">
+                    <li>建議以乾布或微濕軟布擦拭表面汙漬，避免機洗或長時間浸水。</li>
+                    <li>收納時請放置於乾燥通風處，避免日曬及高溫導致變形或龜裂。</li>
+                    <li>若需深層清潔，建議使用中性清潔劑並搭配柔刷輕刷，勿使用漂白水或強酸強鹼清潔劑。</li>
+                        
+                    
+                    
+                    </ul>
 
                 </div>
 
@@ -191,29 +201,35 @@
             <div class="maylike  mb-32">
                 <div class="rowb d-flex">
 
-                    <div class="maylike-type mr-8">
+                        <a href="#" class="maylike-type mr-8">
                         <img src="./image/product-2.png" alt="VM001">
                         <p class="h6 ">VM001</p>
                         <p class="md">NT$2,600</p>
-                    </div>
+                        </a>
 
-                    <div class="maylike-type mr-8">
+                        
+
+                        <a href="#" class="maylike-type mr-8">
                         <img src="./image/product-3.png" alt="Melty Kiss">
                         <p class="h6 ">Melty Kiss</p>
                         <p class="md">NT$4,000</p>
-                    </div>
+                        </a>
 
-                    <div class="maylike-type mr-8">
+                        <a href="#" class="maylike-type mr-8">
                         <img src="./image/product-4.png" alt="BOOMBLOK">
                         <p class="h6 ">BOOMBLOK</p>
                         <p class="md">NT$3,200</p>
-                    </div>
+                        </a>
 
-                    <div class="maylike-type mr-8">
+                    
+
+                        <a href="#" class="maylike-type mr-8">
                         <img src="./image/product-7.png" alt="Sugar Snap">
                         <p class="h6 ">Sugar Snap</p>
                         <p class="md">NT$3,200</p>
-                    </div>
+                    </a>
+
+                    
 
                 </div>
 
@@ -236,15 +252,25 @@
     <footer class="footer">
         <div class="footer-t d-flex justify-content-sb  mb-24">
             <img src="./image/logo.svg" alt="">
-            <div class="footer-t-r d-flex pt-12 pb-12">
-                <a href="./index.html" class="mr-40">商品列表</a>
-                <a href="./brandstory.css">品牌故事</a>
+            <div class="  pt-12 pb-12">
+                <ul class="footer-t-r d-flex">
+                    <li><a href="./index.html" class="mr-40">商品列表</a></li>
+                    <li><a href="./brandstory.css">品牌故事</a></li>
+                </ul>
+                
             </div>
         </div>
         <div class="footer-b d-flex mt-32">
             <div class="copyright">
 
-                <p>Copyright ©2025 URBNSTYLE <br>All Rights Reserved.</p>
+                <p class="mb-4">
+                    Copyright ©2025 URBNSTYLE 
+                </p>
+                <p>
+                    All Rights Reserved.
+                </p>
+                
+
             </div>
             
         </div>

@@ -4,21 +4,7 @@
 /* 顏色 */
 
 
-/* 通用樣式 */
-.container {
-    max-width: 1296px;
-    margin: 0 auto;
-    padding-left: 12px;
-    padding-right: 12px;
-}
-@media screen and (max-width:1100px){
-    .container{
-        width: 100%;    
-        padding-left: 12px;
-        padding-right:12px ;  
-    }
 
-}
 
 
 .nav{
@@ -38,15 +24,6 @@
 
 }
 
-.n3{
-    color: var(--neutral-300);
-}
-.n6{
-    color: var(--neutral-600);
-}
-.p4{
-    color: var(--primary-400);
-}
 
 .side-l{
     width: 196px;
@@ -62,7 +39,7 @@
 
 .side-r{
     flex:1;
-    flex-wrap: wrap;
+    
     padding-left: 12px;
     padding-right: 12px;
 }
@@ -72,14 +49,14 @@
     margin-left: -12px;
     margin-right: -12px;
 }
-.col-4{
+.col-sm-2{
     width: 33.3333%;
     padding-left: 12px;
     padding-right: 12px;
 }
 
 
-.col-4 img{
+.col-sm-2 img{
     width: 100%;
     height: auto;
 }
@@ -91,7 +68,7 @@
 }
 
 @media screen and (max-width:1296px){
-    .col-4{
+    .col-sm-2{
         width: 50%;
         padding-left: 12px;
         padding-right: 12px;
@@ -102,7 +79,7 @@
 
 }
 @media screen and (max-width:576px){
-    .col-4{
+    .col-sm-2{
         width: 100%;
         padding-left: 12px;
         padding-right: 12px;
@@ -151,10 +128,13 @@
     .member button{
         margin-top: 8px;
     }
-
-
 }
-
+.member button:hover{
+    color: black;
+    background-color: white;
+    border-width: 3px;
+    
+}
 
 .count{
     margin-top:33.5px ;
@@ -174,28 +154,11 @@
 }
 
 
-.footer{
-    max-width: 1296px;
-    margin: 64px auto;
-    
-}
-.footer-t{
-    border-bottom: 1px solid var(--neutral-300);
-}
 
-.footer-t-r{
-    color: var(--neutral-900);
-}
-
-.footer-b p{
-    color: var(--neutral-600);
-}
-.footer-b{
-    justify-content: center;
-}
 .copyright{
     text-align: center;
     line-height: 1.5;
+    font-size: 14px;
 }
 
 .product-card{
@@ -208,23 +171,3 @@
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
-@media screen and (max-width: 576px) {
-    .footer {
-        padding-left:12px;  /* 讓內容離開螢幕邊緣 */
-        padding-right: 12px;
-        box-sizing: border-box;
-    }
-    .footer-t {
-        flex-direction: column;    /* 主區塊垂直排列 */
-        align-items: flex-start;       
-        text-align: left;
-        
-    }
-
-    .footer-t-r {
-        flex-direction: column;    /* 讓連結垂直排列 */
-        justify-content: center;
-        padding-left: 12px;
-        gap: 16px; /* 控制上下間距 */
-    }
-}

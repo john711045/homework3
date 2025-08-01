@@ -5,22 +5,6 @@
 
 
 
-/* 通用樣式 */
-.container {
-    max-width: 1296px;
-    margin: 0 auto;
-    padding-left: 12px;
-    padding-right: 12px;
-}
-
-@media screen and (max-width:1100px){
-    .container{
-        width: 100%;    
-        padding-left: 12px;
-        padding-right:12px ;  
-    }
-
-}
 
 .nav{
     align-items: center;
@@ -58,15 +42,16 @@
 }
 
 /*格式*/
-.side-r{
-    max-width: 746px;
+.col-7{
+    max-width: 58.3333%;
     padding: 4px;
 
 }
 
 
-@media screen and (max-width:1100px){
-    .side-r{
+@media screen and (max-width:992px){
+    .col-md-7{
+        max-width:100%;
         width: 100%;    
         padding-left: 12px;
         padding-right:12px ;  
@@ -76,6 +61,18 @@
 }
 
 @media screen and (max-width:768px){
+    .col-md-7{
+        width: 100%;    
+        padding-left: 12px;
+        padding-right:12px ;  
+        margin: 0 auto;
+    }
+
+
+}
+
+
+@media screen and (max-width:576px){
     .content{
         flex-direction: column;
     }
@@ -83,34 +80,41 @@
         display: none;
     }
 
+
 }
 
+.card{
+    padding-left: 4px;
+    padding-right: 4px;
+    margin: 0 auto;
+}
 .row{
 
     margin-left: -4px;
     margin-right: -4px;
-}
-.col-6{
-    width: 100%;
     display: flex;
     flex-wrap: wrap;
 }
+.col-6{
+    width: 50%;
+    
+    padding: 4px;
 
-
+}
 
 
 .card img{
     width: 100%;
     height: auto;
 }
-.card{
+/* .card{
     width: 50%;
-    padding: 4px;
+    
 
-}
+} */
 
-@media screen and (max-width:1100px){
-    .card{
+@media screen and (max-width:992px){
+    .col-6{
         width: 100%;    
         padding-left: 12px;
         padding-right:12px ;  
@@ -118,12 +122,13 @@
 
 }
 
-.side-l{
-    max-width: 526px;
+.col-5{
+    max-width: 41.6666%;
     margin-left: 12px;
 }
-@media screen and (max-width:1100px){
-    .side-l{
+@media screen and (max-width:992px){
+    .col-lg-5{
+        max-width:100%;
         width: 100%;    
         padding-left: 12px;
         padding-right:12px ;  
@@ -132,6 +137,28 @@
     }
 
 }
+
+@media screen and (max-width:576px){
+
+
+    .col-sm-5{
+        width: 100%;    
+        padding-left: 12px;
+        padding-right:12px ;  
+        margin: 0 auto;
+    }
+
+
+}
+
+
+.before-slash::before{
+    content: "/";
+    display: inline-block; 
+    margin-right: 12px; 
+    color: var(--neutral-300);
+}
+
 .shoescolor-color{
     max-width: 64px;
     text-align: center;
@@ -203,7 +230,7 @@
     height: auto;
 }
 
-@media screen and (max-width:1100px){
+@media screen and (max-width:992px){
     .maylike-type{
         width: 280px;    
         padding-left: 12px;
@@ -228,32 +255,11 @@
 }
 
 
-.footer{
-    
-    padding-top: 64px;
-    padding-bottom: 64px;
-    background-color: #F8F9FA;
-    
-}
-.footer-t{
-    max-width: 1296px;
-    margin: 0 auto;
-    border-bottom: 1px solid var(--neutral-300);
-}
 
-.footer-t-r{
-    color: var(--neutral-900);
-}
-
-.footer-b p{
-    color: var(--neutral-600);
-}
-.footer-b{
-    justify-content: center;
-}
 .copyright{
     text-align: center;
     line-height: 1.5;
+    font-size: 14px;
 }
 .mga{
     margin: 0 auto;
@@ -284,6 +290,14 @@
 
 
 }
+
+.member button:hover{
+    color: black;
+    background-color: white;
+
+    
+}
+
 .count{
     margin-top:33.5px ;
     margin-bottom: 33.5px;
@@ -305,23 +319,3 @@
     color: white;
 }
 
-@media screen and (max-width: 576px) {
-    .footer {
-        padding-left:12px;  /* 讓內容離開螢幕邊緣 */
-        padding-right: 12px;
-        box-sizing: border-box;
-    }
-    .footer-t {
-        flex-direction: column;    /* 主區塊垂直排列 */
-        align-items: flex-start;       
-        text-align: left;
-        
-    }
-
-    .footer-t-r {
-        flex-direction: column;    /* 讓連結垂直排列 */
-        justify-content: center;
-        padding-left: 12px;
-        gap: 16px; /* 控制上下間距 */
-    }
-}

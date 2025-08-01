@@ -7,7 +7,7 @@
     --neutral-500:#ADB5BD;
     --neutral-600:#6C757D;
     --neutral-900:#212529;
-    --neutral-0:#FFFFFF;
+    --neutral-white:#FFFFFF;
     --neutral-100:#f8f9fa;
     --primary-100:#F5FEE7;
     --primary-200:#E8FEC5;    
@@ -31,14 +31,19 @@
 }
 
 .n0{
-    color: var(--neutral-0);
+    color: var(--neutral-white);
 }
 .n1{
     color: var(--neutral-100);
 }
 .p1{
-    color: var(--neutral-100);
+    color: var(--primary-100);
 }
+
+.p4{
+    color: var(--primary-400);
+}
+
 
 /*基本樣式*/
 *,*::before,*::after{
@@ -69,6 +74,7 @@ a{
     color: var(--neutral-900);
     display: block;
 }
+
 
 h1{
     font-size: 40px;
@@ -105,6 +111,13 @@ h6{
 
 }
 
+.h6{
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: 700;
+
+}
+
 /*Paragraph*/
 .sm{
     font-size: 14px;
@@ -115,17 +128,6 @@ h6{
 
 
 
-/*顏色*/
-
-.n3{
-    color: var(--neutral-300);
-}
-.n6{
-    color: var(--neutral-600);
-}
-.p4{
-    color: var(--primary-400);
-}
 
 .bg-primary-100{
     background-color: var(--primary-100);
@@ -244,12 +246,69 @@ h6{
 .d-flex{
     display: flex;
 }
-.d-in{
+.d-inline{
     display: inline;
 }
 .justify-content-sb{
     justify-content: space-between;
 }
-.fww{
+.flex-wrap{
     flex-wrap: wrap;
+}
+
+/* 通用樣式 */
+.container {
+    max-width: 1320px;
+    margin: 0 auto;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+@media screen and (max-width:992px){
+    .container{
+        width: 100%;    
+        padding-left: 12px;
+        padding-right:12px ;  
+    }
+
+}
+
+/*footer*/
+.footer{
+    max-width: 1296px;
+    margin: 64px auto;
+    
+}
+.footer-t{
+    border-bottom: 1px solid var(--neutral-300);
+}
+
+.footer-t-r{
+    color: var(--neutral-900);
+}
+
+.footer-b p{
+    color: var(--neutral-600);
+}
+.footer-b{
+    justify-content: center;
+}
+@media screen and (max-width: 576px) {
+    .footer {
+        padding-left:12px;  /* 讓內容離開螢幕邊緣 */
+        padding-right: 12px;
+        box-sizing: border-box;
+    }
+    .footer-t {
+        flex-direction: column;    /* 主區塊垂直排列 */
+        align-items: flex-start;       
+        text-align: left;
+        
+    }
+
+    .footer-t-r {
+        flex-direction: column;    /* 讓連結垂直排列 */
+        justify-content: center;
+        padding-left: 12px;
+        gap: 16px; /* 控制上下間距 */
+    }
 }
