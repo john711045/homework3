@@ -14,7 +14,7 @@
     width: 856px;
     margin: 0 auto;
 }
-@media screen and (max-width:856px){
+@media screen and (max-width:992px){
     .middle{
         width: 100%;    
         padding-left: 12px;
